@@ -51,10 +51,31 @@ header h1 {
   font-size: .90em;
   padding: 0 10px;
 }
+/*=========================================================*/
 
 
-/*=========Border After .intro and Before form===========*/
+
+/*=========Border before Contact Form===========*/
 .intro::after {
   content: "";
-  border: 3px bold 75%;
+  display: inherit;
+  height: 1px;
+  width: 90%;
+  margin: 0px auto;
+  border-top: 4px solid #585858;
 }
+
+form::before {
+  content: "";
+  display: inherit;
+  height: 1px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2px;
+  border-top: 2px solid #585858;
+}
+/*=========================================*/
+
+
+
+/*======================Contact Form=====================*/
