@@ -34,6 +34,11 @@ header h1 {
 
 
 /*=======================Introduction=====================*/
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .intro h1,
  p {
   text-align: center;
@@ -57,14 +62,14 @@ header h1 {
 /*=========Border before Contact Form===========*/
 .top-border {
   border-top: 4px solid #585858;
-  width: 92%;
+  width: 100%;
   margin: 0 auto;
   margin-top: 2px;
 }
 
 .bottom-border {
   border-top: 2px solid #585858;
-  width: 92%;
+  width: 100%;
   margin: 0 auto;
   margin-top: 2px;
   margin-bottom: 20px;
@@ -75,7 +80,7 @@ header h1 {
 
 /*=================General Form Styles============*/
 form {
-  width: 96%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -154,7 +159,7 @@ label[for="zip"] /*Gives breathing room from the state select box*/ {
 /*================Border above Newsletter====================*/
 .news-border {
   border-top: 3px solid #585858;
-  width: 96%;
+  width: 100%;
   margin: 20px auto;
 }
 /*===========================================================*/
