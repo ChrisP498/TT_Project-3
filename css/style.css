@@ -12,13 +12,18 @@
   margin: 0;
   padding: 0;
 }
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
 /*======================================================*/
 
 
 
 /*=============Header=================*/
 header {
-  background: #001a33;
+  background: #101f38;
   color: #fff;
 }
 
@@ -34,11 +39,6 @@ header h1 {
 
 
 /*=======================Introduction=====================*/
-.container {
-  width: 90%;
-  margin: 0 auto;
-}
-
 .intro h1,
  p {
   text-align: center;
@@ -62,14 +62,14 @@ header h1 {
 /*=========Border before Contact Form===========*/
 .top-border {
   border-top: 4px solid #585858;
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
   margin-top: 2px;
 }
 
 .bottom-border {
   border-top: 2px solid #585858;
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
   margin-top: 2px;
   margin-bottom: 20px;
@@ -125,6 +125,10 @@ select{
   border-radius: 2%
 }
 
+.state {
+  color: #cdcfd3;
+}
+
 input[placeholder="Required"]{
   text-align: right;
   padding-right: 15px;
@@ -136,11 +140,18 @@ input[type="email"]:focus {
   text-align:left;
 }
 
+input::placeholder{
+  text-align: right;
+}
+
+::placeholder {
+  color: #cdcfd3;
+}
 .contact-section input:focus {
   background: lightblue;
   transition: 1s;
   border: 1px solid darkblue;
-  box-shadow: 10px 10px 10px coral;
+  box-shadow: 5px 5px 5px lightgrey;
   outline: 0 none;
 }
 
@@ -159,7 +170,7 @@ label[for="zip"] /*Gives breathing room from the state select box*/ {
 /*================Border above Newsletter====================*/
 .news-border {
   border-top: 3px solid #585858;
-  width: 100%;
+  width: 95%;
   margin: 20px auto;
 }
 /*===========================================================*/
@@ -179,6 +190,7 @@ label[for="zip"] /*Gives breathing room from the state select box*/ {
   vertical-align: middle;
   margin-top: -10px;
   margin-bottom: 10px;
+  margin-right: 15px;
 }
 
 .newsletter-section p {
@@ -200,7 +212,7 @@ label[for="zip"] /*Gives breathing room from the state select box*/ {
   background: lightblue;
   transition: 1s;
   border: 1px solid darkblue;
-  box-shadow: 10px 10px 10px coral;
+  box-shadow: 5px 5px 5px lightgrey;
   outline: 0 none;
 }
 /*======================================================*/
@@ -209,7 +221,7 @@ label[for="zip"] /*Gives breathing room from the state select box*/ {
 
 /*==================Sign Up Button======================*/
 button[type="submit"] {
-  width: 100%;
+  width: 95%;
   height: 65px;
   margin-top: 20px;
   background: #5dd5d5;
@@ -218,6 +230,10 @@ button[type="submit"] {
   border: 1px solid inherit;
   border-radius: 3%;
   border-style: none;
+}
+
+.sign-up {
+  text-align: center;
 }
 /*======================================================*/
 
@@ -236,5 +252,31 @@ footer {
 /*====================Media Query=======================*/
 @media(min-width:768px) {
 
+  header h1 {
+    font-size: .95em;
+    text-align: center;
+  }
+
+  .container {
+    width: 70%;
+  }
+
+  .contact-section label {
+    float: left;
+    clear: both;
+    margin-top: 25px;
+  }
+
+  .contact-section input,
+  .contact-section select {
+    float: right;
+    vertical-align: middle;
+    position: relative;
+    width: 75%;
+  }
+
+  #zip {
+    width: 75%;
+  }
 }
 /*=======================================================*/
