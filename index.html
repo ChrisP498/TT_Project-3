@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
   <head>
@@ -35,16 +35,16 @@
                   <input type="email" id="mail" name="user_email" placeholder="Required" required>
 
                 <label for="telephone">Phone Number</label>
-                  <input type="telephone" id="telephone" name"user_telephone">
+                  <input type="tel" id="telephone" name="user_telephone">
 
                 <label for="address">Street Address</label>
-                  <input type="address" id="address" name="user_address">
+                  <input type="text" id="address" name="user_address">
 
                 <label for="city">City</label>
-                  <input type="city" id="city" name="user_city">
+                  <input type="text" id="city" name="user_city">
 
                 <label for="state">State</label>
-                  <select id="state" name="user_state" placeholder="Choose State">
+                  <select id="state" name="user_state">
                     <option class="state" disabled="disabled" selected="selected">Choose State</option>
                     <option value="AL">Alabama</option>
                   	<option value="AK">Alaska</option>
@@ -100,7 +100,7 @@
                   </select>
 
                 <label for="zip">Zip Code</label>
-                  <input type="zip-code" id="zip" name="user_zip-code">
+                  <input type="number" id="zip" name="user_zip-code">
             </fieldset><!--CONTACT INFORMATION END-->
 
             <div class="news-border"></div>
@@ -110,21 +110,21 @@
 
                 <p class="select-letter">Select the newsletters you would like to recieve</p>
 
-                <input type="checkbox" id="html-news" vaule="" name="user_html-news">
+                <input type="checkbox" id="html-news" name="user_html-news">
                   <label for="html-news"> HTML News</label>
                     <br>
-                <input type="checkbox" id="css-news" vaule="" name="user_css-news">
+                <input type="checkbox" id="css-news" name="user_css-news">
                   <label for="css-news">CSS News</label>
                     <br>
-                  <input type="checkbox" id="js-news" vaule="" name="user_js-news">
+                  <input type="checkbox" id="js-news" name="user_js-news">
                     <label for="js-news">Javascript News</label>
                     <br>
                 <p>Newsletter format</p>
 
-                  <input type="radio" id="html-format" vaule="" name="user_format">
+                  <input type="radio" id="html-format" name="user_format">
                     <label for="html-format">HTML</label>
                       <br>
-                  <input type="radio" id="plain-format" vaule="" name="user_format">
+                  <input type="radio" id="plain-format" name="user_format">
                     <label for="plain-format">Plain Text</label>
                       <br>
                <p>Other topics you'd like to hear about</p>
@@ -136,7 +136,7 @@
         </form>
 
       <footer>
-          <p>&copy 2017 The Code Review</p>
+          <p>&copy; 2017 The Code Review</p>
       </footer>
     </div><!--container-->
   </body>
