@@ -125,10 +125,6 @@ select{
   border-radius: 2%
 }
 
-.state {
-  color: #cdcfd3;
-}
-
 input[placeholder="Required"]{
   text-align: right;
   padding-right: 15px;
@@ -148,7 +144,6 @@ input::placeholder{
   color: #cdcfd3;
 }
 .contact-section input:focus {
-  background: lightblue;
   transition: 1s;
   border: 1px solid darkblue;
   box-shadow: 5px 5px 5px lightgrey;
@@ -227,9 +222,8 @@ button[type="submit"] {
   background: #5dd5d5;
   color: #fff;
   font-size: 1.7em;
-  border: 1px solid inherit;
-  border-radius: 3%;
-  border-style: none;
+  border-radius: 2%;
+  border: none;
 }
 
 .sign-up {
