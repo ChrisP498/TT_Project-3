@@ -39,12 +39,12 @@ header h1 {
 
 
 /*=======================Introduction=====================*/
-.intro h1,
+.intro h2,
  p {
   text-align: center;
 }
 
-.intro h1 {
+.intro h2 {
   color: #001a33;
   font-size: 1.2em;
   padding: 5px 5px 0;
@@ -88,7 +88,7 @@ fieldset {
   border: none;
 }
 
-legend h1 /*Contact-info and Newsletter legend*/ {
+legend h2 /*Contact-info and Newsletter legend*/ {
   font-size: 1.2em;
   padding-bottom: 15px;
 }
