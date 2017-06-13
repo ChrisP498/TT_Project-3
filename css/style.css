@@ -21,6 +21,43 @@
 
 
 
+/*=================General Form Styles============*/
+form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: none;
+}
+
+legend h2 /*Contact-info and Newsletter legend*/ {
+  font-size: 1.2em;
+  padding-bottom: 15px;
+}
+
+.contact-section input,
+select {
+    width: 100%;
+}
+
+label {
+  color: #666666;
+  font-size: .95em;
+  font-weight: lighter;
+}
+
+input {
+  background: #f2f2f2;
+  border-radius: 2%;
+  border: none;
+  margin: 15px 0;
+  height: 45px;
+}
+/*=================================================*/
+
+
+
 /*=============Header=================*/
 header {
   background: #101f38;
@@ -75,43 +112,6 @@ header h1 {
   margin-bottom: 20px;
 }
 /*=========================================================*/
-
-
-
-/*=================General Form Styles============*/
-form {
-  width: 100%;
-  margin: 0 auto;
-}
-
-fieldset {
-  border: none;
-}
-
-legend h2 /*Contact-info and Newsletter legend*/ {
-  font-size: 1.2em;
-  padding-bottom: 15px;
-}
-
-.contact-section input,
-select {
-    width: 100%;
-}
-
-label {
-  color: #666666;
-  font-size: .95em;
-  font-weight: lighter;
-}
-
-input {
-  background: #f2f2f2;
-  border-radius: 2%;
-  border: none;
-  margin: 15px 0;
-  height: 45px;
-}
-/*=================================================*/
 
 
 
