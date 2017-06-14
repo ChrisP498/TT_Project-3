@@ -9,13 +9,15 @@
 /*=================Basic page styles===================*/
 :root {
   font-family: 'Merriweather', serif;
+  background: #2196f3;
   margin: 0;
   padding: 0;
 }
 
 .container {
+  background: #d9d9d9;
   width: 90%;
-  max-width: 787px;
+  max-width: 500px;
   margin: 0 auto;
 }
 /*======================================================*/
@@ -56,12 +58,13 @@ input {
 
 /*=============Header=================*/
 header {
-  background: #101f38;
+  background: #0069c0;
   color: #fff;
 }
 
 header h1 {
   margin-top: 0;
+  margin-bottom: 0;
   padding: 25px;
   text-align: center;
   text-transform: uppercase;
@@ -72,19 +75,19 @@ header h1 {
 
 
 /*=======================Introduction=====================*/
-.intro h2,
- p {
+.intro {
   text-align: center;
 }
 
 .intro h2 {
-  color: #001a33;
+  color: #000;
   font-size: 1.2em;
-  padding: 5px 5px 0;
+  margin-top: 0;
+  padding: 15px 5px 0;
 }
 
 .intro p {
-  color:  #ccc;
+  color:  gray;
   font-size: .90em;
   padding: 0 10px;
 }
@@ -121,10 +124,20 @@ select{
   border-radius: 2%
 }
 
-input[placeholder="Required"]{
+select:focus {
+  background: #fff;
+  transition: 1s;
+  border: 5px solid #6ec6ff;
+  box-shadow: 5px 5px 5px #c8b900;
+  outline: 0 none;
+}
+
+input[placeholder="Required"],
+input[placeholder="Optional"] {
   text-align: right;
   padding-right: 15px;
   font-size: 16px;
+  color: #cdcfd3;
 }
 
 input[type="text"]:focus,
@@ -138,9 +151,10 @@ input::placeholder{
 }
 
 .contact-section input:focus {
+  background: #fff;
   transition: 1s;
-  border: 1px solid darkblue;
-  box-shadow: 5px 5px 5px lightgrey;
+  border: 5px solid #6ec6ff;
+  box-shadow: 5px 5px 5px #c8b900;
   outline: 0 none;
 }
 
@@ -194,13 +208,14 @@ label[for="zip"] /*Gives breathing room from the state select box*/ {
   height: 100px;
   border-style: none;
   border-radius: 2%;
-
+  padding: 10px;
 }
 
 .newsletter-section textarea:focus {
+  background: #fff;
   transition: 1s;
-  border: 1px solid darkblue;
-  box-shadow: 5px 5px 5px lightgrey;
+  border: 5px solid #6ec6ff;
+  box-shadow: 5px 5px 5px #c8b900;
   outline: 0 none;
 }
 /*======================================================*/
@@ -212,11 +227,17 @@ button[type="submit"] {
   width: 95%;
   height: 65px;
   margin-top: 20px;
-  background: #5dd5d5;
+  background: #c6a700;
   color: #fff;
   font-size: 1.7em;
   border-radius: 2%;
   border: none;
+}
+
+button:hover {
+  transition: 1.2s;
+  background: #fdd835;
+  border: 2px solid #0069c0;
 }
 
 .sign-up {
@@ -228,9 +249,15 @@ button[type="submit"] {
 
 /*========================Footer=========================*/
 footer {
+  text-align: center;
   margin-top: 30px;
-  color: #b3b3b3;
+  color: grey;
   font-style: italic;
+}
+
+footer p {
+  margin-bottom: 0;
+  padding-bottom: 25px;
 }
 /*=======================================================*/
 
@@ -264,7 +291,9 @@ footer {
   }
 
   #zip {
-    width: 70%;
+    float: left;
+    margin-left: 76px;
+    width: 25%;
   }
 }
 /*=======================================================*/
