@@ -44,14 +44,6 @@ label {
   font-size: .95em;
   font-weight: lighter;
 }
-
-input {
-  background: #f2f2f2;
-  border-radius: 2%;
-  border: none;
-  margin: 15px 0;
-  height: 45px;
-}
 /*=================================================*/
 
 
@@ -134,7 +126,7 @@ select:focus {
 
 input[placeholder="Required"],
 input[placeholder="Optional"] {
-  text-align: right;
+  float: right;
   padding-right: 15px;
   font-size: 16px;
   color: #cdcfd3;
@@ -142,7 +134,7 @@ input[placeholder="Optional"] {
 
 input[type="text"]:focus,
 input[type="email"]:focus {
-  text-align:left;
+  text-align:right;
 }
 
 input::placeholder{
@@ -156,6 +148,15 @@ input::placeholder{
   border: 5px solid #6ec6ff;
   box-shadow: 5px 5px 5px #c8b900;
   outline: 0 none;
+}
+
+.contact-section input {
+  color: gray;
+  background: #f2f2f2;
+  border-radius: 2%;
+  border: none;
+  margin: 15px 0;
+  height: 45px;
 }
 
 label[for="zip"] /*Gives breathing room from the state select box*/ {
